@@ -1,3 +1,4 @@
+import CustomChain from "../consts/chain";
 import { TOKEN_CONTRACT_ADDRESS } from "@/app/constants/constants";
 import { NextResponse } from "next/server";
 
@@ -19,7 +20,7 @@ export async function POST(req: Request) {
     const { address } = await req.json();
 
     const res = await fetch(
-        `${ENGINE_URL}/contract/mumbai/${TOKEN_CONTRACT_ADDRESS}/erc20/claim-to`,
+        `${ENGINE_URL}/contract/CustomChain/${TOKEN_CONTRACT_ADDRESS}/erc20/claim-to`,
         {
             method: "POST",
             headers: {
