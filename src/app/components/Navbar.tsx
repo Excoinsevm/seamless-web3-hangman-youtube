@@ -1,3 +1,4 @@
+import CustomChain from "../constants/chain";
 import { ConnectWallet, EmbeddedWallet, useAddress, useContract, useDisconnect, useTokenBalance, useWallet } from "@thirdweb-dev/react";
 import { useState } from "react";
 import { TOKEN_CONTRACT_ADDRESS } from "../constants/constants";
