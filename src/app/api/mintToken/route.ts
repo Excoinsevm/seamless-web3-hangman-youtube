@@ -1,4 +1,4 @@
-import CustomChain from "../consts/chain";
+import CustomChain from "../constants/chain";
 import { TOKEN_CONTRACT_ADDRESS } from "@/app/constants/constants";
 import { NextResponse } from "next/server";
 
