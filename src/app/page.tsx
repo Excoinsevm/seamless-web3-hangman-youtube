@@ -1,5 +1,6 @@
 'use client';
 
+import CustomChain from "../constants/chain";
 import { ThirdwebProvider, embeddedWallet, useAddress } from '@thirdweb-dev/react';
 import Navbar from './components/Navbar';
 import { useEffect, useState } from 'react';
@@ -8,7 +9,7 @@ import { getRandomWord } from './lib/gameLogic';
 export default function Home() {
   return (
     <ThirdwebProvider
-      activeChain="mumbai"
+      activeChain="CustomChain"
       clientId={process.env.NEXT_PUBLIC_TEMPLATE_CLIENT_ID}
       supportedWallets={[
         embeddedWallet({
